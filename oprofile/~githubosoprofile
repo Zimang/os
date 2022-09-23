@@ -1,0 +1,30 @@
+
+## process command
+command & :process working in the background
+C+c :exit the processing can't be reversed
+C+z :hang on the process
+bd :hold the hanging process working in the background
+bg %n :bg the number n process
+kiil %n :kill the number n process
+fg :hold the hanging process working front
+fg %n :like bg
+jos :see all the process, followed by + means the nearest ,and the - means the sencond nearest
+nohup command & :still working in the background even if i exit.
+
+
+## operf
+
+once the profile is finishedm,it will annunce "Profiling done"
+it has saved it's data in a folfer called oprofile_data which can be used to generate a report
+
+## opreport
+
+Kallsyms provides symbol lookup used by the profiler, and the ld.so and libc.so are part of the glibc package, a common library linked into nearly all Linux executables that provides basic functionality developers can use to keep from reinventing the wheel and provide a generic level of compatibility between various systems.
+You can see that the actual program ls had far less non-HALT time – the bulk of the heavy lifting was done by the standard libraries.
+
+## Remove logData : sudo rm -Rf oprofile_data
+Once we’re done with the report, it’s a good idea to either remove the data folder or save it for future analysis.
+
+https://linuxhint.com/oprofile-tutorial/
+
+
